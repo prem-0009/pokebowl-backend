@@ -8,6 +8,14 @@ const pokemon = require('./pokemon.js');
 
 
 // OUR code here.
+const getRow = function(userPokemon){
+  for ( const char of pokemon){
+    if ( char[0] === userPokemon){
+      return char
+    } 
+  }
+  return null;
+}
 
 if (typeof getRow === 'undefined') {
   getRow = undefined;
